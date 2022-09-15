@@ -1,0 +1,34 @@
+<h3>List of all employees</h3>
+<table>
+  <tr>
+    <th class="td1">Name</th>
+    <th>Total Time in Month</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let elem of tempAllEmployees">
+    <td
+      class="td1"
+      [ngClass]="{
+        highlight: elem.TotalTime < 100
+      }"
+    >
+      {{ elem.EmployeeName }}
+    </td>
+    <td
+      [ngClass]="{
+        highlight: elem.TotalTime < 100
+      }"
+    >
+      {{ elem.TotalTime | number: "1.0-0" }} hrs
+    </td>
+    <td
+      [ngClass]="{
+        highlight: elem.TotalTime < 100
+      }"
+    >
+      <button (click)="editEmployee()">Edit</button>
+    </td>
+  </tr>
+</table>
+
+<div class="pie-chart"><app-pie-chart></app-pie-chart></div>

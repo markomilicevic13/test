@@ -1,0 +1,36 @@
+table {
+  border-collapse: collapse;
+  width: 60%;
+}
+table, th, td {
+  border: 1px solid;
+
+}
+td {
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.highlight{
+  background-color: #E9593A;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  text-decoration:underline;
+  color: blue
+}
+
+.td1 {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.pie-chart {
+  width: 80%;
+
+}
